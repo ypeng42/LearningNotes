@@ -1,0 +1,14 @@
+﻿
+1. Fn + ->/<-  as  Home/End key to move to begin/end of line
+
+2. esc deletes the entire line
+
+3. ctrl + l   move to top (similar to clear)
+
+4. -? show help
+
+5.alt + tab to switch screen;   WIN + tab to switch screen with more options
+
+6.$PSVersionTable
+
+7. $env:windir
