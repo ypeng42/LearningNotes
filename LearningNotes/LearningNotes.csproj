@@ -51,6 +51,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Json\json1.json" />
+    <None Include="ps\script1.ps1" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

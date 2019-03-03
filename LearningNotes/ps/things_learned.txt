@@ -12,3 +12,13 @@
 6.$PSVersionTable
 
 7. $env:windir
+
+8. $a.GetType()
+
+9.$_ refers to current object
+
+10. sometimes need to call $a.refresh() to update info. ex. serviceController  
+
+11. in ise, ctrl + r to switch file and cmd window
+
+12. add a shortcut to close powershell window: Set-PSReadlineKeyHandler -Chord Ctrl+w -Function DeleteCharOrExit
