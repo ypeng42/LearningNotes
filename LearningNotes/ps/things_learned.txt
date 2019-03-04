@@ -22,3 +22,7 @@
 11. in ise, ctrl + r to switch file and cmd window
 
 12. add a shortcut to close powershell window: Set-PSReadlineKeyHandler -Chord Ctrl+w -Function DeleteCharOrExit
+
+13. test-path, new-item
+
+14. Get-Command | Where-Object {$_.CommandType -eq 'cmdlet'}
