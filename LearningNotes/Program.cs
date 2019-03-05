@@ -11,7 +11,7 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            JsonLearn.ReadJson();
+            JsonLearn.ReadJsonAndConvertEnum();
         }
     }
 }
