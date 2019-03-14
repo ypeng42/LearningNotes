@@ -55,8 +55,11 @@
     <None Include="Json\json1.json" />
     <None Include="ps\script1.ps1" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Folder Include="Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ETW\things_learned.txt" />
     <Content Include="ps\things_learned.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

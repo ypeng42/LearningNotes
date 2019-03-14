@@ -1,0 +1,4 @@
+﻿use System.Diagnostics.Tracing (new stuff in .net 4.5)
+Microsoft.Diagnostics.Tracing
+
+System.Diagnostics contains old stuff
