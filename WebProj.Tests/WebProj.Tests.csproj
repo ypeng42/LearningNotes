@@ -100,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WebProj\WebProj.csproj">
-      <Project>{5FAFBB5E-533C-477B-BA21-F909876EC1AA}</Project>
+      <Project>{5fafbb5e-533c-477b-ba21-f909876ec1aa}</Project>
       <Name>WebProj</Name>
     </ProjectReference>
   </ItemGroup>

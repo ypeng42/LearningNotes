@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProj", "WebProj\WebProj.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProj.Tests", "WebProj.Tests\WebProj.Tests.csproj", "{35F0188B-57FE-4867-8942-4517D21F2E87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mscorlib", "..\..\..\Source Code\dotnet461TH2\Source\ndp\clr\src\BCL\mscorlib.csproj", "{67C368DE-3511-4106-8749-000D91EFD3FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{35F0188B-57FE-4867-8942-4517D21F2E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35F0188B-57FE-4867-8942-4517D21F2E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35F0188B-57FE-4867-8942-4517D21F2E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C368DE-3511-4106-8749-000D91EFD3FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C368DE-3511-4106-8749-000D91EFD3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C368DE-3511-4106-8749-000D91EFD3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C368DE-3511-4106-8749-000D91EFD3FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

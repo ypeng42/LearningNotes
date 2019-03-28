@@ -12,12 +12,10 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            var arr = new string[] { String.Empty };
+            List<int> l = new List<int>();
+            l.Add(3);
 
-            foreach (string s in arr)
-            {
-                Console.WriteLine("asdasdad" + s + "yeah");
-            }
+            Console.WriteLine("asdasdad" + "yeah");
         }
     }
 }
