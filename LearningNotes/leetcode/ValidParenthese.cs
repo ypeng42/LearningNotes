@@ -10,6 +10,9 @@ namespace LearningNotes.leetcode
          * 1. Peek an empty stack will throw exception. Use Count property to avoid that
          * 2. s[0] to get char at index
          * 3. stack.Count == 0 to check IsEmpty
+         * 
+         * Thought process:
+         * Use a stack, push for opening, pop for closing.
          */
         public bool IsValid(string s)
         {
@@ -18,14 +21,18 @@ namespace LearningNotes.leetcode
             for (int i = 0; i < s.Length; i++)
             {
                 char c = s[i];
-                if (c == '{' || c == '[' || c == '(') stack.Push(c);
 
-                // this check is necessary if only closing "thing" will be poped
-                if ((c == '}' || c == ']' || c == ')') && stack.Count == 0) return false;
-
-                if (c == '}' && !stack.Pop().Equals('{')) return false;
-                if (c == ']' && !stack.Pop().Equals('[')) return false;
-                if (c == ')' && !stack.Pop().Equals('(')) return false;
+                if (c == '{' || c == '[' || c == '(')
+                {
+                    stack.Push(c);
+                }
+                else
+                {
+                    if (stack.Count == 0) return false;
+                    if (c == '}' && !stack.Pop().Equals('{')) return false;
+                    if (c == ']' && !stack.Pop().Equals('[')) return false;
+                    if (c == ')' && !stack.Pop().Equals('(')) return false;
+                }
             }
 
             return stack.Count == 0;
