@@ -8,6 +8,16 @@ namespace LearningNotes.leetcode
 {
     public class _2Sum
     {
+        /* 
+         * Hint:
+         * Consider Dict/hashmap when 
+         * 1. find a pair or a group of something (need some additional operation)
+         * 
+         * A few more things:
+         * 1. Dictionary is generic type Dictionary<TKey,TValue>, Hashtable is a weakly typed 
+         * 2. When you try to access non existing key dictionary, it gives runtime error. Hashtable returns null
+         * */
+
         public static int[] TwoSum(int[] nums, int target)
         {
             var rst = new int[2];
