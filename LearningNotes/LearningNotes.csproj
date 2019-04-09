@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Json\JsonLearn.cs" />
     <Compile Include="leetcode\2Sum.cs" />
+    <Compile Include="leetcode\ReverseString.cs" />
     <Compile Include="leetcode\ValidParenthese.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
