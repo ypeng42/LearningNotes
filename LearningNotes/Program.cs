@@ -1,4 +1,6 @@
+using LearningNotes.Files;
 using LearningNotes.Json;
+using LearningNotes.leetcode;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,10 +18,8 @@ namespace LearningNotes
             //List<int> l = new List<int>();
             //l.Add(3);
 
-            //Console.WriteLine("asdasdad" + "yeah");
-            var s = new Stack();
-
-            Console.WriteLine();
+            var valueToIndex = new Dictionary<int, List<int>>();
+            Console.WriteLine(DivisorGame.Solution(123000));
         }
     }
 }

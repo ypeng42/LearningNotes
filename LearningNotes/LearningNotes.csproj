@@ -44,9 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Files\TestType.cs" />
     <Compile Include="Json\JsonLearn.cs" />
     <Compile Include="leetcode\2Sum.cs" />
+    <Compile Include="leetcode\DivisorGame.cs" />
+    <Compile Include="leetcode\LongestArithSeqLength.cs" />
+    <Compile Include="leetcode\MaxAncestorDiff.cs" />
     <Compile Include="leetcode\ReverseString.cs" />
+    <Compile Include="leetcode\Utils\DictExtension.cs" />
+    <Compile Include="leetcode\Utils\TreeNode.cs" />
     <Compile Include="leetcode\ValidParenthese.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -58,9 +64,7 @@
     <None Include="Json\json1.json" />
     <None Include="ps\script1.ps1" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Files\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="ETW\things_learned.txt" />
     <Content Include="ps\things_learned.txt" />
