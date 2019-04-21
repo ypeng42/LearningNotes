@@ -19,7 +19,7 @@ namespace LearningNotes.leetcode
         Return True if and only if Alice wins the game, assuming both players play optimally. 
 
         --Thought:
-        1. Classic dp, very similar to "taking step" problem 
+        1. Classic dp, very similar to "Climbing Stairs (70)"
         2. Read more about how to determine whether a number is prime number: http://mathandmultimedia.com/2012/06/02/determining-primes-through-square-root/
      */
     class DivisorGame

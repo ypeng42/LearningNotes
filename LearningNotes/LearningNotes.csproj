@@ -47,11 +47,19 @@
     <Compile Include="Files\TestType.cs" />
     <Compile Include="Json\JsonLearn.cs" />
     <Compile Include="leetcode\2Sum.cs" />
+    <Compile Include="leetcode\CellInDistanceOrder.cs" />
     <Compile Include="leetcode\DivisorGame.cs" />
+    <Compile Include="leetcode\HouseRobber.cs" />
+    <Compile Include="leetcode\ListProblem\ListAddTwoNumber2.cs" />
+    <Compile Include="leetcode\ListProblem\ListAddTwoNumbers.cs" />
+    <Compile Include="leetcode\Tree\LevelOrder\LargestValueTreeRow.cs" />
     <Compile Include="leetcode\LongestArithSeqLength.cs" />
     <Compile Include="leetcode\MaxAncestorDiff.cs" />
+    <Compile Include="leetcode\ReCoverFromPreorder.cs" />
     <Compile Include="leetcode\ReverseString.cs" />
+    <Compile Include="leetcode\Tree\LevelOrder\TreeRightSideView.cs" />
     <Compile Include="leetcode\Utils\DictExtension.cs" />
+    <Compile Include="leetcode\Utils\ListNode.cs" />
     <Compile Include="leetcode\Utils\TreeNode.cs" />
     <Compile Include="leetcode\ValidParenthese.cs" />
     <Compile Include="Program.cs" />
@@ -67,7 +75,9 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="ETW\things_learned.txt" />
+    <Content Include="leetcode\Summary.txt" />
     <Content Include="ps\things_learned.txt" />
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

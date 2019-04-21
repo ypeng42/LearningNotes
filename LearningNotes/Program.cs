@@ -15,11 +15,13 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            //List<int> l = new List<int>();
-            //l.Add(3);
+            RecoverFromPreorder s = new RecoverFromPreorder();
+            s.Solution("1-2--3--4-5--6--7");
+        }
 
-            var valueToIndex = new Dictionary<int, List<int>>();
-            Console.WriteLine(DivisorGame.Solution(123000));
+        public static void x(ref int a)
+        {
+            a = 4;
         }
     }
 }
