@@ -51,6 +51,7 @@
     <Compile Include="leetcode\HouseRobber.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumber2.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumbers.cs" />
+    <Compile Include="leetcode\Tree\BSTSearch\UniqueBSTSearch.cs" />
     <Compile Include="leetcode\Tree\Traversal\PostOrderTraversal.cs" />
     <Compile Include="leetcode\MatrixCellDistanceOrder.cs" />
     <Compile Include="leetcode\MaxSumTwoArray.cs" />
