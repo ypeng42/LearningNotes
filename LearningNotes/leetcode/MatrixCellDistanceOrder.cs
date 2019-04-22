@@ -8,10 +8,45 @@ namespace LearningNotes.leetcode
 {
     /*
      * 1030. Matrix Cells in Distance Order(easy)
+     * We are given a matrix with R rows and C columns has cells with integer coordinates (r, c), where 0 <= r < R and 0 <= c < C.
+
+Additionally, we are given a cell in that matrix with coordinates (r0, c0).
+
+Return the coordinates of all cells in the matrix, sorted by their distance from (r0, c0) from smallest distance to largest distance.  
+Here, the distance between two cells (r1, c1) and (r2, c2) is the Manhattan distance, |r1 - r2| + |c1 - c2|.  
+(You may return the answer in any order that satisfies this condition.)
      */
-    class CellInDistanceOrder
+    class MatrixCellDistanceOrder
     {
-        // The idea is not hard, but it takes too long to type
+        // This is very straightforward, if using sort is not considered cheating...
+        public int[][] SimpleSolution(int R, int C, int r0, int c0)
+        {
+            var rst = new List<Tuple<int, int>>();
+            for (int i = 0; i < R; i++)
+            {
+                for (int j = 0; j < C; j++)
+                {
+                    rst.Add(Tuple.Create(i, j));
+                }
+            }
+
+            rst.Sort((t1, t2) => {
+                return (Math.Abs(t1.Item1 - r0) + Math.Abs(t1.Item2 - c0)) - (Math.Abs(t2.Item1 - r0) + Math.Abs(t2.Item2 - c0)); // just implementing the rule
+            });
+
+            int[][] data = new int[R * C][]; // the returning type is annoying, otherwise solution could be much shorter
+            for (int i = 0; i < rst.Count; i++)
+            {
+                data[i] = new int[2];
+                data[i][0] = rst[i].Item1;
+                data[i][1] = rst[i].Item2;
+            }
+            return data;
+        }
+
+
+        // Solution 2: feel like overkill... but it works
+        // the idea is every time distance + 1 (move 1 cell) goes to another level, do a level order traversal
         public int[][] AllCellsDistOrder(int R, int C, int r0, int c0)
         {
             int total = R * C;
@@ -29,13 +64,13 @@ namespace LearningNotes.leetcode
                 for (int i = 0; i < size; i++)
                 {
                     var point = q.Dequeue();
-                    var row = point.Item1; 
+                    var row = point.Item1;
                     var col = point.Item2;
                     AddToRst(rst, row, col, count);
                     count++;
 
                     int newRow, newCol;
-                    
+
                     // top
                     newRow = row + 1;
                     newCol = col;

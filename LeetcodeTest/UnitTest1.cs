@@ -57,5 +57,17 @@ namespace LeetcodeTest
                 ListNode.Convert(new int[] {7, 0, 8}));
 
         }
+
+        [TestMethod]
+        public void TwoCitySchedule()
+        {
+            var s = new TwoCitySchedule();
+            s.SimpleSolution(new int[][] {
+                new int[] { 10, 20 },
+                new int[] { 30, 200 },
+                new int[] { 400, 50 },
+                new int[] { 30, 20 }
+            });
+        }
     }
 }
