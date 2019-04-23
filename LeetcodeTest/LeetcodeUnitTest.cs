@@ -2,11 +2,12 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LearningNotes.leetcode;
 using LearningNotes.leetcode.Utils;
+using LearningNotes.leetcode.Tree;
 
 namespace LeetcodeTest
 {
     [TestClass]
-    public class UnitTest1
+    public class LeetcodeUnitTest
     {
         [TestMethod]
         public void TestTwoSum()
@@ -20,7 +21,7 @@ namespace LeetcodeTest
             int target = 542;
 
             _2Sum.TwoSum(input, target);
-            Assert.AreEqual(_2Sum.TwoSum(input, target), new int[] { 23, 22});
+            //Assert.AreEqual(_2Sum.TwoSum(input, target), new int[] { 45, 28});
         }
 
         [TestMethod]
@@ -47,15 +48,28 @@ namespace LeetcodeTest
         public void TestListAddTwoNumbers()
         {
             var c = new ListAddTwoNumbers();
-            Assert.AreEqual(c.AddTwoNumbers(ListNode.Convert(new int[] {9, 8}), ListNode.Convert(new int[] {1})),
+            ListTestHelper(c.AddTwoNumbers(ListNode.Convert(new int[] {9, 8}), ListNode.Convert(new int[] {1})),
                 ListNode.Convert(new int[] {0, 9}));
 
-            Assert.AreEqual(c.AddTwoNumbers(ListNode.Convert(new int[] {1, 8}), ListNode.Convert(new int[] {0})),
-                ListNode.Convert(new int[] {1, 8}));
+            ListTestHelper(c.AddTwoNumbers(ListNode.Convert(new int[] { 1, 8 }), ListNode.Convert(new int[] { 0 })),
+                ListNode.Convert(new int[] { 1, 8 }));
 
-            Assert.AreEqual(c.AddTwoNumbers(ListNode.Convert(new int[] {2, 4, 3}), ListNode.Convert(new int[] {5, 6, 4})), 
-                ListNode.Convert(new int[] {7, 0, 8}));
+            ListTestHelper(c.AddTwoNumbers(ListNode.Convert(new int[] { 2, 4, 3 }), ListNode.Convert(new int[] { 5, 6, 4 })),
+                ListNode.Convert(new int[] { 7, 0, 8 }));
 
+        }
+
+
+        private void ListTestHelper(ListNode expected, ListNode actual)
+        {
+            while (expected != null && actual != null)
+            {
+                Assert.AreEqual(expected.val, actual.val);
+                expected = expected.next;
+                actual = actual.next;
+            }
+
+            Assert.IsTrue((expected == null) && (actual == null));
         }
 
         [TestMethod]
@@ -68,6 +82,46 @@ namespace LeetcodeTest
                 new int[] { 400, 50 },
                 new int[] { 30, 20 }
             });
+        }
+
+        [TestMethod]
+        public void TreeArrayConversionTest()
+        {
+            TreeArrayConversionHelper(new int?[] { 2, 1, 4, null, null, 3 });
+            TreeArrayConversionHelper(new int?[] { 2, 1, 3 });
+            TreeArrayConversionHelper(new int?[] { 1, 2, 3, 4, 5, 6, 7, 8 });
+        }
+
+        private void TreeArrayConversionHelper(int?[] input)
+        {
+            var tree = TreeNode.ArrayToTree(input);
+            var actual = TreeNode.TreeToArray(tree); // i could trim the length but i am lazy...
+
+            for (int i = 0; i < input.Length; i++)
+            {
+                Assert.AreEqual(input[i], actual[i]);
+            }
+        }
+
+        private void TreeTestHelper(TreeNode expected, TreeNode actual)
+        {
+            var expectedArr = TreeNode.TreeToArray(expected);
+            var actualArr = TreeNode.TreeToArray(actual);
+
+            for (int i = 0; i < expectedArr.Length; i++)
+            {
+                Assert.AreEqual(expectedArr[i], actualArr[i]);
+            }
+        }
+
+        [TestMethod]
+        public void RecoverBST()
+        {
+            var s = new RecoverBST();
+            var expected = TreeNode.ArrayToTree(new int?[] {2, 1, 4, null, null, 3});
+            var actual = s.RecoverTree(TreeNode.ArrayToTree(new int?[] {3, 1, 4, null, null, 2}));
+
+            TreeTestHelper(expected, actual);
         }
     }
 }

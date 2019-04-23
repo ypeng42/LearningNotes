@@ -1,6 +1,7 @@
 using LearningNotes.Files;
 using LearningNotes.Json;
 using LearningNotes.leetcode;
+using LearningNotes.leetcode.Tree.BSTSearch;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -15,9 +16,9 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            PQ();
-            //RecoverFromPreorder s = new RecoverFromPreorder();
-            //s.Solution("1-2--3--4-5--6--7");
+            //PQ();
+            UniqueSearchTwo s = new UniqueSearchTwo();
+            s.GenerateTrees(15);
         }
 
         // That's the closest I can get

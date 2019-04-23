@@ -1,6 +1,20 @@
 ﻿
 Tree:
-Level order traversal
+## Level order traversal
 
 199. Binary Tree Right Side View
 515. Find Largest Value in Each Tree Row    
+
+## Useful tips
+-- pre-order traversal of a BST is sorted array
+-- 1..n is the in-order traversal for any BST with nodes 1 to n
+
+-- the essense of tree traversal
+
+traverse (TreeNode root) {
+   if (root == null)
+      return;
+   traverse(root.left);
+   // Do some business
+   traverse(root.right);
+}
