@@ -3,6 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using LearningNotes.leetcode;
 using LearningNotes.leetcode.Utils;
 using LearningNotes.leetcode.Tree;
+using LearningNotes.leetcode.Tree.constructTree;
+using LearningNotes.leetcode.Tree.PathSum;
 
 namespace LeetcodeTest
 {
@@ -21,7 +23,6 @@ namespace LeetcodeTest
             int target = 542;
 
             _2Sum.TwoSum(input, target);
-            //Assert.AreEqual(_2Sum.TwoSum(input, target), new int[] { 45, 28});
         }
 
         [TestMethod]
@@ -122,6 +123,20 @@ namespace LeetcodeTest
             var actual = s.RecoverTree(TreeNode.ArrayToTree(new int?[] {3, 1, 4, null, null, 2}));
 
             TreeTestHelper(expected, actual);
+        }
+
+        [TestMethod]
+        public void ConstructPostOrderInOrder()
+        {
+            var s = new ConstructBSTFromInorderPostorder();
+            s.BuildTree(new int[] { 9, 3, 15, 20, 7 }, new int[] { 9, 15, 7, 20, 3 });
+        }
+
+        [TestMethod]
+        public void PathSumTwo()
+        {
+            var s = new PathSumTwo();
+            s.PathSum(TreeNode.ArrayToTree(new int?[] {5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1}), 22);
         }
     }
 }

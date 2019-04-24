@@ -18,3 +18,13 @@ traverse (TreeNode root) {
    // Do some business
    traverse(root.right);
 }
+
+-- Use start and end index to indicate range of tree in an array is a common trick
+
+-- When traverse tree, set a few pointers and do operation is common (1028. Recover a Tree From Preorder Traversal)
+
+-- Read problem carefully, don't miss things like "duplicate does not exist" etc
+
+-- When dealing with tree height, use -1 to indicate something is wrong/find answer etc
+
+-- new List<int>(arr.ToArray()) to make a deep copy

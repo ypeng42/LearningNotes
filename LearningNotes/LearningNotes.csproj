@@ -51,9 +51,18 @@
     <Compile Include="leetcode\HouseRobber.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumber2.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumbers.cs" />
+    <Compile Include="leetcode\Tree\BalancedBinaryTree.cs" />
+    <Compile Include="leetcode\Tree\BinaryTreeToLinkedList.cs" />
     <Compile Include="leetcode\Tree\BSTSearch\UniqueBSTSearch.cs" />
     <Compile Include="leetcode\Tree\BSTSearch\UniqueSearchTwo.cs" />
+    <Compile Include="leetcode\Tree\constructTree\ConstructBSTFromInorderPostorder.cs" />
+    <Compile Include="leetcode\Tree\constructTree\ConstructBSTFromInorderPreorder.cs" />
+    <Compile Include="leetcode\Tree\LevelOrder\levelOrderTraversal.cs" />
+    <Compile Include="leetcode\Tree\LevelOrder\ZigZagTraversal.cs" />
+    <Compile Include="leetcode\Tree\PathSum\PathSum.cs" />
+    <Compile Include="leetcode\Tree\PathSum\PathSumTwo.cs" />
     <Compile Include="leetcode\Tree\RecoverBST.cs" />
+    <Compile Include="leetcode\Tree\SymmetricTree.cs" />
     <Compile Include="leetcode\Tree\Traversal\PostOrderTraversal.cs" />
     <Compile Include="leetcode\MatrixCellDistanceOrder.cs" />
     <Compile Include="leetcode\MaxSumTwoArray.cs" />
@@ -62,7 +71,7 @@
     <Compile Include="leetcode\Tree\LevelOrder\LargestValueTreeRow.cs" />
     <Compile Include="leetcode\LongestArithSeqLength.cs" />
     <Compile Include="leetcode\MaxAncestorDiff.cs" />
-    <Compile Include="leetcode\ReCoverFromPreorder.cs" />
+    <Compile Include="leetcode\Tree\constructTree\ReCoverFromPreorder.cs" />
     <Compile Include="leetcode\ReverseString.cs" />
     <Compile Include="leetcode\Tree\LevelOrder\TreeRightSideView.cs" />
     <Compile Include="leetcode\Tree\Traversal\PreOrderTraversal.cs" />
