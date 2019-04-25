@@ -52,13 +52,16 @@
     <Compile Include="leetcode\ListProblem\ListAddTwoNumber2.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumbers.cs" />
     <Compile Include="leetcode\Tree\BalancedBinaryTree.cs" />
-    <Compile Include="leetcode\Tree\BinaryTreeToLinkedList.cs" />
+    <Compile Include="leetcode\Tree\InPlaceOperation\BinaryTreeToLinkedList.cs" />
     <Compile Include="leetcode\Tree\BSTSearch\UniqueBSTSearch.cs" />
     <Compile Include="leetcode\Tree\BSTSearch\UniqueSearchTwo.cs" />
     <Compile Include="leetcode\Tree\constructTree\ConstructBSTFromInorderPostorder.cs" />
     <Compile Include="leetcode\Tree\constructTree\ConstructBSTFromInorderPreorder.cs" />
+    <Compile Include="leetcode\Tree\InPlaceOperation\PopulateNextRightPointer.cs" />
+    <Compile Include="leetcode\Tree\InPlaceOperation\PopulateNextRightPointerTwo.cs" />
     <Compile Include="leetcode\Tree\LevelOrder\levelOrderTraversal.cs" />
     <Compile Include="leetcode\Tree\LevelOrder\ZigZagTraversal.cs" />
+    <Compile Include="leetcode\Tree\PathSum\MaxPathSum.cs" />
     <Compile Include="leetcode\Tree\PathSum\PathSum.cs" />
     <Compile Include="leetcode\Tree\PathSum\PathSumTwo.cs" />
     <Compile Include="leetcode\Tree\RecoverBST.cs" />
@@ -78,6 +81,7 @@
     <Compile Include="leetcode\TwoCitySchedule.cs" />
     <Compile Include="leetcode\Utils\DictExtension.cs" />
     <Compile Include="leetcode\Utils\ListNode.cs" />
+    <Compile Include="leetcode\Utils\Node.cs" />
     <Compile Include="leetcode\Utils\TreeNode.cs" />
     <Compile Include="leetcode\ValidParenthese.cs" />
     <Compile Include="Program.cs" />

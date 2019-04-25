@@ -138,5 +138,19 @@ namespace LeetcodeTest
             var s = new PathSumTwo();
             s.PathSum(TreeNode.ArrayToTree(new int?[] {5, 4, 8, 11, null, 13, 4, 7, 2, null, null, 5, 1}), 22);
         }
+
+        [TestMethod]
+        public void FlatternTree()
+        {
+            var s = new BinaryTreeToLinkedList();
+            s.Flatten(TreeNode.ArrayToTree(new int?[] { 1, 2, 5, 3, 4, null, 6}));
+        }
+
+        [TestMethod]
+        public void MaxPathSum()
+        {
+            var s = new MaxPathSum();
+            s.MaxPathSumS(TreeNode.ArrayToTree(new int?[] { 1, -2, -3, 1, 3, -2, null, -1}));
+        }
     }
 }

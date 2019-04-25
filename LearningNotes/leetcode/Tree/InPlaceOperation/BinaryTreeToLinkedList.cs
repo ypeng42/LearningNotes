@@ -52,11 +52,32 @@ namespace LearningNotes.leetcode.Tree
                     \ 
                      5
      */
-    class BinaryTreeToLinkedList
+    public class BinaryTreeToLinkedList
     {
+        TreeNode prev = null;
         public void Flatten(TreeNode root)
         {
+            Helper(root);
+        }
 
+        // Simple in-place operation, the trick is don't forget to save the node reference before it's updated
+        private void Helper(TreeNode node)
+        {
+            if (node == null) return;
+
+            TreeNode leftNode = node.left; // a few lines later, left will set to null, save it here
+            TreeNode rightNode = node.right; // after call Helper(leftNode), right node will be updated before Helper(rightNode), save it here.
+
+            if (prev != null)
+            {
+                prev.right = node;
+            }
+
+            node.left = null;
+            prev = node;
+
+            Helper(leftNode);
+            Helper(rightNode);
         }
     }
 }
