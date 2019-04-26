@@ -150,7 +150,7 @@ namespace LeetcodeTest
         public void MaxPathSum()
         {
             var s = new MaxPathSum();
-            s.MaxPathSumS(TreeNode.ArrayToTree(new int?[] { 1, -2, -3, 1, 3, -2, null, -1}));
+            s.Solution(TreeNode.ArrayToTree(new int?[] { 1, -2, -3, 1, 3, -2, null, -1}));
         }
     }
 }

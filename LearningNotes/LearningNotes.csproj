@@ -52,6 +52,12 @@
     <Compile Include="leetcode\ListProblem\ListAddTwoNumber2.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumbers.cs" />
     <Compile Include="leetcode\Tree\BalancedBinaryTree.cs" />
+    <Compile Include="leetcode\Tree\InvertBinaryTree.cs" />
+    <Compile Include="leetcode\Tree\LowestCommonAncestor.cs" />
+    <Compile Include="leetcode\Tree\PathSum\PathSumThree.cs" />
+    <Compile Include="leetcode\Tree\SerAndDeserBinaryTree.cs" />
+    <Compile Include="leetcode\Tree\SumOfLeftLeaves.cs" />
+    <Compile Include="leetcode\Tree\Traversal\BSTIterator.cs" />
     <Compile Include="leetcode\Tree\InPlaceOperation\BinaryTreeToLinkedList.cs" />
     <Compile Include="leetcode\Tree\BSTSearch\UniqueBSTSearch.cs" />
     <Compile Include="leetcode\Tree\BSTSearch\UniqueSearchTwo.cs" />
@@ -65,7 +71,9 @@
     <Compile Include="leetcode\Tree\PathSum\PathSum.cs" />
     <Compile Include="leetcode\Tree\PathSum\PathSumTwo.cs" />
     <Compile Include="leetcode\Tree\RecoverBST.cs" />
+    <Compile Include="leetcode\Tree\SumRootToLeaf.cs" />
     <Compile Include="leetcode\Tree\SymmetricTree.cs" />
+    <Compile Include="leetcode\Tree\Traversal\KthSmallestInBST.cs" />
     <Compile Include="leetcode\Tree\Traversal\PostOrderTraversal.cs" />
     <Compile Include="leetcode\MatrixCellDistanceOrder.cs" />
     <Compile Include="leetcode\MaxSumTwoArray.cs" />
@@ -78,6 +86,7 @@
     <Compile Include="leetcode\ReverseString.cs" />
     <Compile Include="leetcode\Tree\LevelOrder\TreeRightSideView.cs" />
     <Compile Include="leetcode\Tree\Traversal\PreOrderTraversal.cs" />
+    <Compile Include="leetcode\Tree\TreePath.cs" />
     <Compile Include="leetcode\TwoCitySchedule.cs" />
     <Compile Include="leetcode\Utils\DictExtension.cs" />
     <Compile Include="leetcode\Utils\ListNode.cs" />

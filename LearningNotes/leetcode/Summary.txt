@@ -28,3 +28,17 @@ traverse (TreeNode root) {
 -- When dealing with tree height, use -1 to indicate something is wrong/find answer etc
 
 -- new List<int>(arr.ToArray()) to make a deep copy
+
+-- bottom up approach
+recurse(left)
+recurse(right)
+Action()
+
+-- top down approach
+Action()
+recurse(left)
+recurse(right)
+
+depends on the problem, 1 approach is more siutable. Also apply to things other than tree
+
+-- use single variable "countdown" instead of create 1 "tracker" and 1 "target"
