@@ -1,7 +1,9 @@
 using LearningNotes.Files;
 using LearningNotes.Json;
 using LearningNotes.leetcode;
+using LearningNotes.leetcode.Tree;
 using LearningNotes.leetcode.Tree.BSTSearch;
+using LearningNotes.leetcode.Utils;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,9 +18,8 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            //PQ();
-            UniqueSearchTwo s = new UniqueSearchTwo();
-            s.GenerateTrees(15);
+            var s = new DeleteNodeBST();
+            s.DeleteNode(TreeNode.ArrayToTree(new int?[] { 5, 3, 6, 2, 4, null, 7}), 3);
         }
 
         // That's the closest I can get

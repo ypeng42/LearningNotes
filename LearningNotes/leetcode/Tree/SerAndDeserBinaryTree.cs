@@ -17,6 +17,9 @@ namespace LearningNotes.leetcode.Tree
      * 
      * Note: Do not use class member/global/static variables to store states. 
      * Your serialize and deserialize algorithms should be stateless.
+     * 
+     * 449. Serialize and Deserialize BST 
+     * for bst, adding "null" is not necessary since can use max min to determine end of a branch
      */
     class SerAndDeserBinaryTree
     {

@@ -1,5 +1,13 @@
 ﻿
-Tree:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Common %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+-- Read problem carefully, don't miss things like "duplicate does not exist" etc
+-- use single variable "countdown" instead of create 1 "tracker" and 1 "target"
+
+-- new List<int>(arr.ToArray()) to make a deep copy
+
+-- Memorize the technique of finding all subarray/treepath sum equal to k use Hashmap (560. Subarray Sum Equals K, 437. Path Sum III)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tree %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ## Level order traversal
 
 199. Binary Tree Right Side View
@@ -23,11 +31,7 @@ traverse (TreeNode root) {
 
 -- When traverse tree, set a few pointers and do operation is common (1028. Recover a Tree From Preorder Traversal)
 
--- Read problem carefully, don't miss things like "duplicate does not exist" etc
-
 -- When dealing with tree height, use -1 to indicate something is wrong/find answer etc
-
--- new List<int>(arr.ToArray()) to make a deep copy
 
 -- bottom up approach
 recurse(left)
@@ -41,4 +45,4 @@ recurse(right)
 
 depends on the problem, 1 approach is more siutable. Also apply to things other than tree
 
--- use single variable "countdown" instead of create 1 "tracker" and 1 "target"
+

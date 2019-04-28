@@ -1,8 +1,7 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LearningNotes.leetcode
 {
@@ -21,10 +20,10 @@ Return the minimum cost to fly every person to a city such that exactly N people
             // if it's good for A, it's bad for B, and vise versa
             // the top half is best for A (the worst half for B)
             // the bottom half is best for B (the worst half for A)
-            Array.Sort(costs, (a, b) =>
+            System.Array.Sort(costs, Comparer<int[]>.Create((a, b) =>
             {
                 return a[0] - a[1] - (b[0] - b[1]);
-            });
+            }));
 
             int sum = 0;
             for (int i = 0; i < costs.Length; ++i)

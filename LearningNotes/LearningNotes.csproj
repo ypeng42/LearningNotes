@@ -47,12 +47,16 @@
     <Compile Include="Files\TestType.cs" />
     <Compile Include="Json\JsonLearn.cs" />
     <Compile Include="leetcode\2Sum.cs" />
+    <Compile Include="leetcode\Array\SubArrSumEqualK.cs" />
+    <Compile Include="leetcode\Class1.cs" />
     <Compile Include="leetcode\DivisorGame.cs" />
     <Compile Include="leetcode\HouseRobber.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumber2.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumbers.cs" />
     <Compile Include="leetcode\Tree\BalancedBinaryTree.cs" />
+    <Compile Include="leetcode\Tree\DeleteNodeBST.cs" />
     <Compile Include="leetcode\Tree\InvertBinaryTree.cs" />
+    <Compile Include="leetcode\Tree\LevelOrder\NaryTreeLevelOrder.cs" />
     <Compile Include="leetcode\Tree\LowestCommonAncestor.cs" />
     <Compile Include="leetcode\Tree\PathSum\PathSumThree.cs" />
     <Compile Include="leetcode\Tree\SerAndDeserBinaryTree.cs" />
