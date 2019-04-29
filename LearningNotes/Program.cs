@@ -18,8 +18,11 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            var s = new DeleteNodeBST();
-            s.DeleteNode(TreeNode.ArrayToTree(new int?[] { 5, 3, 6, 2, 4, null, 7}), 3);
+            var directuions = new int[4, 2] { { 0, 1 }, { 1, 0 }, { -1, 0 }, { 0, -1 } };
+            for (int i = 0; i < directuions.Length; i++)
+            {
+                Console.WriteLine(directuions[i, 0] + directuions[i, 1]);
+            }
         }
 
         // That's the closest I can get

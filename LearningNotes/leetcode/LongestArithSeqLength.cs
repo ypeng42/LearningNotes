@@ -115,7 +115,7 @@ namespace LearningNotes.leetcode
                      *      9   4   7   2   10
                      * 9        2   2   2   2
                      * 4            2   2   2
-                     * 7                2   2 + 1
+                     * 7                2   2 + 1 (here)
                      * 2
                      * 10
                      */
@@ -129,7 +129,7 @@ namespace LearningNotes.leetcode
                         int k = GetClosetIndex(indexList, i);
                         if (k != -1)
                         {
-                            // 4. (7, 10) is build upon (4, 7). If you think in terms of Single number, it won't make sense
+                            // 4. (7, 10) is build upon (4, 7). If you think of this dp in terms of Single number, it won't make sense
                             dp[i, j] = dp[k, i] + 1;
                         }
                     }

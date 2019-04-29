@@ -33,6 +33,8 @@ traverse (TreeNode root) {
 
 -- When dealing with tree height, use -1 to indicate something is wrong/find answer etc
 
+-- When turning array to tree and going pre-order, go left to right and keep a counter: 1028.Recover a Tree From Preorder Traversal, 449. Serialize and Deserialize BST 
+
 -- bottom up approach
 recurse(left)
 recurse(right)
