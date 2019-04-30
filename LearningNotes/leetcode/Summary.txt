@@ -7,6 +7,13 @@
 
 -- Memorize the technique of finding all subarray/treepath sum equal to k use Hashmap (560. Subarray Sum Equals K, 437. Path Sum III)
 
+-- GetLength(0) to get multi-dimension array row, GetLength(1) for col
+
+-- Use 2 dimenison array to mark cell in a graph
+
+-- LCS is such a common DP problem, master it!!
+	718. Maximum Length of Repeated Subarray
+	583. Delete Operation for Two Strings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tree %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 ## Level order traversal
 

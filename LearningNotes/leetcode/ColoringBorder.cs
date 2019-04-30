@@ -30,6 +30,7 @@ Given a square at location (r0, c0) in the grid and a color, color the border of
             int row = grid.Length, col = grid[0].Length;
             var queue = new Queue<int[]>();
             var border = new HashSet<int[]>();
+            // int[][] is for jagged array
             var directuions = new int[4, 2] { { 0, 1 }, { 1, 0 }, { -1, 0 }, { 0, -1 } }; // right, up, down, left
             var visited = new bool[row, col];
             visited[r0, c0] = true;
@@ -42,6 +43,12 @@ Given a square at location (r0, c0) in the grid and a color, color the border of
                 r0 = cell[0];
                 c0 = cell[1];
 
+                /*
+                 * Say r0, c0 has a neighbor r,c which is component border
+                 * first time, r,c will be added as componet
+                 * second time when looping through r,c 's neighbor, r,c will be discovered as border
+                 */ 
+                // c# has a special way to get multi-dimension array length: GetLength(0)
                 for (int i = 0; i < directuions.GetLength(0); i++)
                 {
                     // cell [r, c] is the adjacent cell of cell[r0, c0]

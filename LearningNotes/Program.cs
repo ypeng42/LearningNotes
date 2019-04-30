@@ -18,11 +18,8 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            var directuions = new int[4, 2] { { 0, 1 }, { 1, 0 }, { -1, 0 }, { 0, -1 } };
-            for (int i = 0; i < directuions.Length; i++)
-            {
-                Console.WriteLine(directuions[i, 0] + directuions[i, 1]);
-            }
+            var s = new EscapeLargeMaze();
+            s.IsEscapePossible(new int[][] { }, new int[] { 0, 0 }, new int[] { 999999, 999999 });
         }
 
         // That's the closest I can get

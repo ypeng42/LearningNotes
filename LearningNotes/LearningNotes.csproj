@@ -51,6 +51,7 @@
     <Compile Include="leetcode\Class1.cs" />
     <Compile Include="leetcode\ColoringBorder.cs" />
     <Compile Include="leetcode\DivisorGame.cs" />
+    <Compile Include="leetcode\EscapeLargeMaze.cs" />
     <Compile Include="leetcode\HouseRobber.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumber2.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumbers.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="leetcode\Tree\Traversal\PreOrderTraversal.cs" />
     <Compile Include="leetcode\Tree\TreePath.cs" />
     <Compile Include="leetcode\TwoCitySchedule.cs" />
+    <Compile Include="leetcode\Array\UncrossedLines.cs" />
     <Compile Include="leetcode\Utils\DictExtension.cs" />
     <Compile Include="leetcode\Utils\ListNode.cs" />
     <Compile Include="leetcode\Utils\Node.cs" />
