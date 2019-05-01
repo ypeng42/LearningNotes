@@ -49,6 +49,7 @@
     <Compile Include="leetcode\2Sum.cs" />
     <Compile Include="leetcode\Array\LCS\DeleteOperationTwoString.cs" />
     <Compile Include="leetcode\Array\LCS\MaxLenRepeatedArray.cs" />
+    <Compile Include="leetcode\Array\LongestIncreasingSubSequence.cs" />
     <Compile Include="leetcode\Array\SubArrSumEqualK.cs" />
     <Compile Include="leetcode\Class1.cs" />
     <Compile Include="leetcode\ColoringBorder.cs" />
@@ -87,10 +88,10 @@
     <Compile Include="leetcode\Tree\Traversal\PostOrderTraversal.cs" />
     <Compile Include="leetcode\MatrixCellDistanceOrder.cs" />
     <Compile Include="leetcode\MaxSumTwoArray.cs" />
-    <Compile Include="leetcode\StreamChecker.cs" />
+    <Compile Include="leetcode\Trie\StreamChecker.cs" />
     <Compile Include="leetcode\Tree\Traversal\InOrderTraversal.cs" />
     <Compile Include="leetcode\Tree\LevelOrder\LargestValueTreeRow.cs" />
-    <Compile Include="leetcode\LongestArithSeqLength.cs" />
+    <Compile Include="leetcode\Array\LongestArithSeqLength.cs" />
     <Compile Include="leetcode\MaxAncestorDiff.cs" />
     <Compile Include="leetcode\Tree\constructTree\ReCoverFromPreorder.cs" />
     <Compile Include="leetcode\ReverseString.cs" />
