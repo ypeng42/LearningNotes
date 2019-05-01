@@ -1,6 +1,7 @@
 using LearningNotes.Files;
 using LearningNotes.Json;
 using LearningNotes.leetcode;
+using LearningNotes.leetcode.Array.LCS;
 using LearningNotes.leetcode.Tree;
 using LearningNotes.leetcode.Tree.BSTSearch;
 using LearningNotes.leetcode.Utils;
@@ -18,8 +19,8 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            var s = new EscapeLargeMaze();
-            s.IsEscapePossible(new int[][] { }, new int[] { 0, 0 }, new int[] { 999999, 999999 });
+            var s = new MaxLenRepeatedArray();
+            s.FindLength(new int[] {1, 0, 1, 0, 1}, new int[] { 0, 1, 1, 1, 1 });
         }
 
         // That's the closest I can get

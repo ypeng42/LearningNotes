@@ -47,6 +47,8 @@
     <Compile Include="Files\TestType.cs" />
     <Compile Include="Json\JsonLearn.cs" />
     <Compile Include="leetcode\2Sum.cs" />
+    <Compile Include="leetcode\Array\LCS\DeleteOperationTwoString.cs" />
+    <Compile Include="leetcode\Array\LCS\MaxLenRepeatedArray.cs" />
     <Compile Include="leetcode\Array\SubArrSumEqualK.cs" />
     <Compile Include="leetcode\Class1.cs" />
     <Compile Include="leetcode\ColoringBorder.cs" />
@@ -96,7 +98,7 @@
     <Compile Include="leetcode\Tree\Traversal\PreOrderTraversal.cs" />
     <Compile Include="leetcode\Tree\TreePath.cs" />
     <Compile Include="leetcode\TwoCitySchedule.cs" />
-    <Compile Include="leetcode\Array\UncrossedLines.cs" />
+    <Compile Include="leetcode\Array\LCS\UncrossedLines.cs" />
     <Compile Include="leetcode\Utils\DictExtension.cs" />
     <Compile Include="leetcode\Utils\ListNode.cs" />
     <Compile Include="leetcode\Utils\Node.cs" />
