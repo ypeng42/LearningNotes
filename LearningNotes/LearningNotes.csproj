@@ -49,10 +49,11 @@
     <Compile Include="leetcode\2Sum.cs" />
     <Compile Include="leetcode\Array\LCS\DeleteOperationTwoString.cs" />
     <Compile Include="leetcode\Array\LCS\MaxLenRepeatedArray.cs" />
+    <Compile Include="leetcode\Array\LIS\LISContinuous.cs" />
     <Compile Include="leetcode\Array\LIS\LongestIncreasingSubSequence.cs" />
     <Compile Include="leetcode\Array\LIS\NumOfLIS.cs" />
     <Compile Include="leetcode\Array\SubArrSumEqualK.cs" />
-    <Compile Include="leetcode\Class1.cs" />
+    <Compile Include="leetcode\MoveStoneUtilConsecutive.cs" />
     <Compile Include="leetcode\ColoringBorder.cs" />
     <Compile Include="leetcode\DivisorGame.cs" />
     <Compile Include="leetcode\EscapeLargeMaze.cs" />

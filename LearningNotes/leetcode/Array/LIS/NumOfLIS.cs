@@ -33,7 +33,7 @@ namespace LearningNotes.leetcode.Array.LIS
                 for (int j = 0; j < i; j++)
                 {
                     /*
-                     * (100 101 102) 4 8 1 2 10
+                     * (100 101 102) (4 8 1 2 10)
                      * if nums[j] > nums[i], treat that series as non-existing
                      */
                     if (nums[j] < nums[i]) // i can be appended to the series
