@@ -2,6 +2,7 @@ using LearningNotes.Files;
 using LearningNotes.Json;
 using LearningNotes.leetcode;
 using LearningNotes.leetcode.Array.LCS;
+using LearningNotes.leetcode.SlidingWindow;
 using LearningNotes.leetcode.Tree;
 using LearningNotes.leetcode.Tree.BSTSearch;
 using LearningNotes.leetcode.Utils;
@@ -19,8 +20,9 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            var s = new MaxLenRepeatedArray();
-            s.FindLength(new int[] {1, 0, 1, 0, 1}, new int[] { 0, 1, 1, 1, 1 });
+            var s = new LongestSubstringKRepeatingChar();
+            var rst = s.LongestSubstring2("aaabb", 3);
+            Console.WriteLine(rst);
         }
 
         // That's the closest I can get

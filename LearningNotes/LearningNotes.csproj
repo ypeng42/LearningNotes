@@ -49,7 +49,6 @@
     <Compile Include="leetcode\2Sum.cs" />
     <Compile Include="leetcode\Array\LCS\DeleteOperationTwoString.cs" />
     <Compile Include="leetcode\Array\LCS\MaxLenRepeatedArray.cs" />
-    <Compile Include="leetcode\Array\LIS\LISContinuous.cs" />
     <Compile Include="leetcode\Array\LIS\LongestIncreasingSubSequence.cs" />
     <Compile Include="leetcode\Array\LIS\NumOfLIS.cs" />
     <Compile Include="leetcode\Array\SubArrSumEqualK.cs" />
@@ -60,6 +59,8 @@
     <Compile Include="leetcode\HouseRobber.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumber2.cs" />
     <Compile Include="leetcode\ListProblem\ListAddTwoNumbers.cs" />
+    <Compile Include="leetcode\SlidingWindow\LongestSubstringKRepeatingChar.cs" />
+    <Compile Include="leetcode\SlidingWindow\LongestSubstringNoRepeatingChar.cs" />
     <Compile Include="leetcode\Tree\BalancedBinaryTree.cs" />
     <Compile Include="leetcode\Tree\DeleteNodeBST.cs" />
     <Compile Include="leetcode\Tree\InvertBinaryTree.cs" />
@@ -120,6 +121,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="ETW\things_learned.txt" />
+    <Content Include="leetcode\SlidingWindow\Approach.txt" />
     <Content Include="leetcode\Summary.txt" />
     <Content Include="ps\things_learned.txt" />
     <Content Include="TextFile1.txt" />
