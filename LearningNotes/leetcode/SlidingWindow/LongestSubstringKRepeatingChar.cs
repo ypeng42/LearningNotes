@@ -47,7 +47,8 @@ namespace LearningNotes.leetcode.SlidingWindow
 
                 while (head < s.Length)
                 {
-                    if (uniqueCharCount <= uniqueChar) // <= is important. When meets the condition, keep exploring instead of removing from window
+                    // sliding window should have only 1 condition
+                    if (uniqueCharCount <= uniqueChar) // "less and equal" is important. When meets the condition, keep exploring instead of removing from window
                     {
                         int charIndex = s[head] - 'a';
                         // add the curr char to sliding window, update corresponding counter

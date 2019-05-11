@@ -1,18 +1,7 @@
-using LearningNotes.Files;
-using LearningNotes.Json;
-using LearningNotes.leetcode;
-using LearningNotes.leetcode.Array.LCS;
-using LearningNotes.leetcode.SlidingWindow;
-using LearningNotes.leetcode.Tree;
-using LearningNotes.leetcode.Tree.BSTSearch;
-using LearningNotes.leetcode.Utils;
+using LearningNotes.leetcode.Array;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LearningNotes
 {
@@ -20,8 +9,8 @@ namespace LearningNotes
     {
         static void Main(string[] args)
         {
-            var s = new LongestSubstringKRepeatingChar();
-            var rst = s.LongestSubstring2("aaabb", 3);
+            var s = new LongestPalindromSubstring();
+            var rst = s.LongestPalindrome("baaab");
             Console.WriteLine(rst);
         }
 
