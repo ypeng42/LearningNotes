@@ -19,6 +19,7 @@ namespace LearningNotes.leetcode.Array
      */
     public class LongestPalindromSubstring
     {
+        // the dp arr may not be needed, loop through all the substring variation
         public string DP(string s)
         {
             if (s == null || s.Length < 2) return s;

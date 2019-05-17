@@ -51,6 +51,7 @@
     <Compile Include="leetcode\Array\LCS\MaxLenRepeatedArray.cs" />
     <Compile Include="leetcode\Array\LIS\LongestIncreasingSubSequence.cs" />
     <Compile Include="leetcode\Array\LIS\NumOfLIS.cs" />
+    <Compile Include="leetcode\Array\LongestConsequtiveSequence.cs" />
     <Compile Include="leetcode\Array\LongestPalindromicSubsequence.cs" />
     <Compile Include="leetcode\Array\LongestPalindromSubstring.cs" />
     <Compile Include="leetcode\Array\SubArrSumEqualK.cs" />

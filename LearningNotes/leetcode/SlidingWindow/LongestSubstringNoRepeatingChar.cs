@@ -34,9 +34,9 @@ namespace LearningNotes.leetcode.SlidingWindow
                 // shrink window until it's valid
                 while (numRepeatChar > 0) // when think about this, first think about window's condition check
                 {
-                    if (count[s[tail]] > 1) numRepeatChar--;
+                    if (count[s[tail]] > 1) numRepeatChar--; // sometimes we may remove the only char. ex "a" in bbaccxyz
 
-                    count[s[tail]]--; // sometimes we may remove the only char. ex "a" in bbaccxyz
+                    count[s[tail]]--;
                     tail++;
                 }
 
