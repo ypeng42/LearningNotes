@@ -1,5 +1,6 @@
 from functools import reduce
-class Solution(object):
+
+class LongestDupSubstr(object):
     def longestDupSubstring(self, S):
         A = [ord(c) - ord('a') for c in S]
         mod = 2 ** 63 - 1
@@ -24,9 +25,3 @@ class Solution(object):
                 hi = mi - 1
 
         return S[res:res + lo]
-
-
-s = Solution()
-s.longestDupSubstring('banana')
-
-print("Goodbye, World!")

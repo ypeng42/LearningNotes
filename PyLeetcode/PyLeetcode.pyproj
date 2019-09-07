@@ -4,9 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cd2765b7-cc68-47ed-b222-2eafe9a40515</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PyLeetcode.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>..\PyLeetcode</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PyLeetcode</Name>
@@ -23,7 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PyLeetcode.py" />
+    <Compile Include="src\longestDupSubstr.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="learned.txt" />
@@ -31,6 +33,9 @@
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

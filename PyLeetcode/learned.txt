@@ -1,14 +1,13 @@
 Rolling hash:
 
 theory:
-(a + b) mod Q = (a mod Q + b mod Q) mod Q
-(a * b) mod Q = (a mod Q * b mod Q) mod Qidempotent
+(a + b) mod Q = (a mod Q + b mod Q) % Q = (a mod Q + b) % Q = (a + b % Q) % Q
+(a * b) mod Q = (a mod Q * b mod Q) mod Q
 (a ^ b) mod Q = (a mod Q ^ b) mod Q
 mod operation is idempotent!!
 
+to prove:
+let a = a*x1 + b
+let b = a*x2 + c
+% by a
 
-hash:
-xi = [ (ti)R^0 + (ti+1)R^1 + .. + (ti+m-1)R^M-1 ] mod Q
-
-xi+1 = [ (ti+1)R^0 + .. + (ti+m)R^M-1 ] mod Q
-     = [ (xi - (ti)R^0)/R + (ti+m)R^M ] mod Q
