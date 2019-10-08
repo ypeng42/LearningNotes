@@ -1,1 +1,18 @@
-ctrl + p -> untabify, stupid leetcode OJ can only recognize space instead of tabs
+
+9/8
+Though list objects support similar operations, they are optimized for fast fixed-length operations
+and incur O(n) memory movement costs for pop(0) and insert(0, v) operations which change both the
+size and position of the underlying data representation.
+
+9/7
+set(nums1) & set(nums2)
+set() converts a list to set.
+& is a shortcut for intersection: see here
+https://docs.python.org/2/library/sets.html
+
+from typing import List
+need to import list otherwise can't find the reference
+
+# ctrl + p -> untabify, stupid leetcode OJ can only recognize space instead of tabs
+
+
