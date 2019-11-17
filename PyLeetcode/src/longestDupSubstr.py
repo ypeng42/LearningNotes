@@ -1,5 +1,6 @@
 from functools import reduce
 
+
 class LongestDupSubstr(object):
     def longestDupSubstring(self, S):
         A = [ord(c) - ord('a') for c in S]

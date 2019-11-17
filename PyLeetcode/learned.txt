@@ -11,3 +11,10 @@ let a = a*x1 + b
 let b = a*x2 + c
 % by a
 
+
+
+1.
+12 // 10 floor division
+
+2. ternary condition in python
+a = 5 if x == 0 else 78
